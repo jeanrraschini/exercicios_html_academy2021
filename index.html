@@ -8,9 +8,9 @@
 </head>
 <body>
   <h1>Hello World</h1>
-  <h2>Sutítulo</h2>
+  <h2>Subtítulo</h2>
   <h5>Subtítulo do subtítulo</h5>
-  <p>
+  <!-- <p>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
     Sunt minima consectetur eum ea reiciendis,<br /> iure sit asperiores, temporibus numquam quibusdam perspiciatis maxime autem quasi sapiente?
     Pariatur rerum harum repellendus ducimus.
@@ -32,6 +32,89 @@
     <li>exemplo de subtitulos</li>
     <li>exemplo de subtitulos</li>
     <li>exemplo de subtitulos</li>
-  </ol>
+  </ol> -->
+  <!-- <a href="https://academy.kazap.dev/" target="_blank">
+    press me
+  </a>
+  <a href="https://academy.kazap.dev/" target="_blank">
+    press me
+  </a> -->
+
+  <div class="grandParent">
+    <div class="parent"></div>
+    <div id="child" class="child"></div>
+  </div>
+<!-- 
+  <div class="grandParent"></div>
+  <div id="grandParent"></div>
+
+  <button class="coloredButton"></button>
+  <a href="" id="navigationLink"></a> -->
+
+  <img src="https://picsum.photos/id/237/400/300" alt="Foto do cachorrinho" />
+
 </body>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: #6c50ee;
+    text-transform: capitalize;
+    border: 6px solid red;
+    padding: 12px;
+  }
+
+  a {
+    border: 5px solid black;
+    margin: 32px 12px;
+    padding: 32px;
+    display: inline-block;
+  }
+
+
+  #child {
+    background-color: red;
+  }
+
+  .child {
+    width: 50%;
+    height: 50%;
+    background-color: slateblue;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .grandParent,
+  .parent,
+  .child {
+    border: 5px solid black;
+    display: inline-block;
+  }
+
+  .grandParent {
+    width: 300px;
+    height: 200px;
+    background-color: saddlebrown;
+    position: relative;
+  }
+
+  .parent {
+    width: 200px;
+    height: 100px;
+    background-color: sandybrown;
+    /* overflow: hidden; */
+    position: absolute;
+    /* right: 0; */
+    bottom: 0;
+  }
+  
+  .parent:hover {
+    z-index: 1;
+  }
+
+</style>
 </html>
